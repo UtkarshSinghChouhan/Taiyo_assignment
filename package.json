@@ -13,6 +13,7 @@
     "@types/node": "^16.18.104",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "chart.js": "^4.4.3",
     "clsx": "^2.1.1",
     "leaflet": "^1.9.4",
     "react": "^18.3.1",

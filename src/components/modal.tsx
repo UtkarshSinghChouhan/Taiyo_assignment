@@ -10,7 +10,7 @@ interface IModal {
 const Modal = ({ children, modalOpen, setModalOpen }: IModal) => {
     return (
         <>
-            {modalOpen && (<div className="fixed z-50 inset-0 flex h-screen w-screen items-center justify-center bg-black bg-opacity-40">
+            {modalOpen && (<div className="fixed z-[1200] inset-0 flex h-screen w-screen items-center justify-center bg-black bg-opacity-40">
 
                 <div className="min-h-[60%] w-full max-w-[80%] lg:max-w-[60%] xl:max-w-[40%] overflow-auto border-[3px] border-fs-dark-border bg-white flex flex-col">
 
