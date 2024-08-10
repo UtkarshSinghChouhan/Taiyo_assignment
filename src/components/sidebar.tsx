@@ -10,7 +10,7 @@ interface ISidebar {
 const Sidebar = ({menuCollapsed, setMenuCollapsed} : ISidebar) => {
     return (
         <>
-            <nav className={cn("z-40 transition-[width] fixed left-0 flex h-full w-[90px] flex-col items-center justify-start bg-fs-beige p-2 border-r-[2px] border-r-fs-dark-border", menuCollapsed && "w-[280px] lg:w-[250px] xl:w-[280px]")}>
+            <nav className={cn("z-[1100] transition-[width] fixed left-0 flex h-full w-[90px] flex-col items-center justify-start bg-fs-beige p-2 border-r-[2px] border-r-fs-dark-border", menuCollapsed && "w-[280px] lg:w-[250px] xl:w-[280px]")}>
 
                 <div className="w-full pt-[71px]"></div>
 
