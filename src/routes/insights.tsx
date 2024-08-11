@@ -1,7 +1,7 @@
 
 import "leaflet/dist/leaflet.css"
 import { useQuery } from '@tanstack/react-query';
-import { cn, getCountryWiseData, getWorldWideData } from '../lib/utils';
+import { cn, getCountryWiseData, getGraphData, getWorldWideData } from '../lib/utils';
 import healthy from '../assets/image/healthy.svg';
 import sick from '../assets/image/sick.svg';
 import dead from '../assets/image/dead.svg';
@@ -31,9 +31,10 @@ const Insights = () => {
     queryKey: ["country-wise-data"]
   })
 
+    
   // ================= Fetching Graph Data================
   const { data: GRAPH_DATA, isLoading: graphLoading } = useQuery({
-    queryFn: () => getCountryWiseData(),
+    queryFn: () => getGraphData(),
     queryKey: ["graph-data"]
   })
 
@@ -53,7 +54,7 @@ const Insights = () => {
   ]
 
   // Skeleton
-  if (worldWideDataLoading && mapLoading && graphLoading) {
+  if (worldWideDataLoading || mapLoading || graphLoading) {
     return (
       <InsightsSkeleton />
     )
@@ -179,7 +180,7 @@ const Insights = () => {
         </div>
 
 
-        <div className="bg-white-500 flex-1 border-[2px] border-fs-dark-border mt-5">
+        <div className="bg-white-500 flex-1 border-[2px] border-fs-dark-border mt-5 bg-fs-beige">
           {TABS[activeIdx].component}          
         </div>
 
