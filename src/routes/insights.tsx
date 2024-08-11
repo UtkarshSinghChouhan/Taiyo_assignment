@@ -9,6 +9,7 @@ import CountUp from 'react-countup';
 import { useState } from 'react';
 import InsightsMap from "../components/insights-map";
 import InsightsGraph from "../components/insights-graph";
+import InsightsSkeleton from "../components/skeletons/insights-skeleton";
 
 // import AreaChart from '../components/charts/area-chart';
 
@@ -54,13 +55,11 @@ const Insights = () => {
   // Skeleton
   if (worldWideDataLoading && mapLoading && graphLoading) {
     return (
-      <div>
-        Loading...
-      </div>
+      <InsightsSkeleton />
     )
   }
-
-
+  
+  
   return (
     <>
       {/* World Wide Data */}
