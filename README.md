@@ -34,7 +34,7 @@ To get started with the project, follow these steps:
 1. Clone the repository:
    
    ```bash
-   git clone https://github.com/UtkarshSinghChouhan/cube-assignment.git
+   git@github.com:UtkarshSinghChouhan/Taiyo_assignment.git
    
 2. Navigate into the project directory:
    
