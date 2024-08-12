@@ -34,7 +34,7 @@ To get started with the project, follow these steps:
 1. Clone the repository:
    
    ```bash
-   git@github.com:UtkarshSinghChouhan/Taiyo_assignment.git
+   git clone git@github.com:UtkarshSinghChouhan/Taiyo_assignment.git
    
 2. Navigate into the project directory:
    
